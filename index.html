@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="file.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Vowell </title>
+</head>
+<title>Vowell: Innovative Web Solutions & AI/ML Technologies</title>
+
+<body>
+    <!-- Desktop Navigation -->
+    <nav id="desktopNav" class="p-4 bg-white text-black shadow-2xl fixed top-0 w-full z-50 hidden lg:block h-21">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo and Branding -->
+            <a class="text-2xl  font-bold flex items-center transition-transform transform hover:scale-105" href="#">
+                <img id="logo" src="images/vowell_logo.png" alt="Vowel Logo" class="mr-2">
+            </a>
+            <div class="flex items-center space-x-6">
+                <a class=" hover:bg-gray-700 hover:text-gray-300 transition-colors px-4 py-2 rounded" href="#">
+                    <i class="fas fa-home mr-2"></i> Home
+                </a>
+                <a class=" hover:bg-gray-700 hover:text-gray-300 transition-colors px-4 py-2 rounded" href="#services">
+                    <i class="fas fa-cogs mr-2"></i> Services
+                </a>
+                <a class=" hover:bg-gray-700 hover:text-gray-300 transition-colors px-4 py-2 rounded" href="#contact">
+                    <i class="fas fa-envelope mr-2"></i> Consulting
+                </a>
+                <a class="hover:bg-gray-700 hover:text-gray-300 transition-colors px-4 py-2 rounded" href="#ai-ml">
+                    <i class="fas fa-headset mr-2"></i> Developer
+                </a>
+            </div>
+        </div>
+    </nav>
+    <nav id="mobileNav" class="p-4 focus:outline-none focus:text-current bg-white shadow-2xl fixed top-0 w-full z-50 lg:hidden">
+        <div class="container mx-auto flex justify-between items-center">
+            <a class="text-xl font-bold flex items-center transition-transform transform hover:scale-105 " href="#">
+                <img id="logo" src="images/vowell_logo.jpg" alt="Vowel Logo" class="rounded-[50%] w-20 h-15 mr-2">VOWELL
+            </a>
+            <!-- Mobile Toggle Button -->
+            <button class="focus:outline-none transition-transform transform hover:scale-110" id="mobileNavToggle">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobileMenu"
+            class="hidden flex-col items-center text-black bg-white space-y-4 mt-4 py-4 px-6 rounded-lg">
+            <ol class="w-full">
+                <li>
+                    <a class="w-full text-left hover:bg-gray-700 hover:text-gray-300 transition-colors px-2 py-2 rounded flex items-center"
+                        href="#">
+                        <i class="fas fa-home mr-2"></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a class="w-full text-left hover:bg-gray-700 hover:text-gray-300 transition-colors px-2 py-2 rounded flex items-center"
+                        href="#services">
+                        <i class="fas fa-cogs mr-2"></i> Services
+                    </a>
+                </li>
+                <li>
+                    <a class="w-full text-left hover:bg-gray-700 hover:text-gray-300 transition-colors px-2 py-2 rounded flex items-center"
+                        href="#contact">
+                        <i class="fas fa-envelope mr-2"></i> Consulting
+                    </a>
+                </li>
+                <li>
+                    <a class="w-full text-left hover:bg-gray-700 hover:text-gray-300 transition-colors px-2 py-2 rounded flex items-center"
+                        href="#ai-ml">
+                        <i class="fas fa-headset mr-2"></i> Developer
+                    </a>
+                </li>
+            </ol>
+        </div>
+
+    </nav>
+    <section id="home"
+        class="relative overflow-hidden bg-gradient-to-r from-gray-100 via-gray-50 to-white hidden md:block">
+        <div id="carousel" class="swiper-container relative shadow-2xl lg:shadow-black mt-8 h-screen  ">
+            <div
+                class="absolute inset-0 flex flex-col sm:mt-10 items-center justify-center text-center z-20 text-white bg-black bg-opacity-50 wrap">
+                <h2 class="text-5xl font-bold mb-6 mt-8 transition delay-500">
+                    Vowell
+                </h2>
+                <p class="text-lg mb-6 px-4 sm:px-12 lg:px-24">
+                    Here, we are embracing a transformative era with strategic growth and innovative solutions. Our
+                    commitment to excellence drives us to set industry benchmarks and create a thriving environment for
+                    all
+                    our stakeholders.
+                </p>
+                <p class="text-lg mb-8 px-4 sm:px-12 lg:px-24 hidden lg:block">
+                    We are dedicated to navigating challenges with a focus on leadership and strategic execution. Our
+                    vision
+                    is to lead with integrity, foster a culture of success, and deliver outstanding value that resonates
+                    across every aspect of our operations. We invite you to join us on this exciting journey and
+                    experience
+                    the difference our passion for innovation can make.
+                </p>
+                <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 container mx-auto  text-center">
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                        <div class="flex items-center justify-center mb-4">
+                            <i class="fas fa-lightbulb text-4xl text-gray-800"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Innovation</h3>
+                        <p class="text-gray-600">Leading the way with innovative solutions that push the boundaries of
+                            technology.</p>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                        <div class="flex items-center justify-center mb-4">
+                            <i class="fas fa-award text-4xl text-gray-800"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Excellence</h3>
+                        <p class="text-gray-600">Dedicated to delivering excellence in every aspect of our services and
+                            solutions.</p>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                        <div class="flex items-center justify-center mb-4">
+                            <i class="fas fa-users text-4xl text-gray-800"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Customer Focus</h3>
+                        <p class="text-gray-600">Putting our customers first and ensuring their needs and expectations
+                            are
+                            met.</p>
+                    </div>
+                </div>
+                <div class="container mx-auto text-center my-2">
+                    <a href="#about"
+                        class="inline-block px-6 py-3 bg-black text-white font-semibold rounded-lg shadow-lg hover:bg-gray-800 transition duration-300 transform hover:scale-105">
+                        Learn More About Us
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-wrapper h-full">
+                <div class="swiper-slide">
+                    <img class="w-full h-full object-cover" src="./images/chatbot.jpg" alt="Chatbot Slide">
+                </div>
+                <div class="swiper-slide">
+                    <img class="w-full h-full object-cover" src="./images/microprocessor2.jpeg"
+                        alt="Microprocessor Slide">
+                </div>
+                <div class="swiper-slide">
+                    <img class="w-full h-full object-cover" src="./images/iot.jpg" alt="IoT Slide">
+                </div>
+                <div class="swiper-slide">
+                    <img class="w-full h-full object-cover" src="./images/drone.jpg" alt="Microprocessor Slide">
+                </div>
+                <div class="swiper-slide">
+                    <img class="w-full h-full object-cover" src="./images/ml.jpg" alt="ML Slide">
+                </div>
+            </div>
+            <div class="swiper-pagination z-50  text-white"></div>
+            <div class="swiper-button-next z-50  text-white"></div>
+            <div class="swiper-button-prev z-50 text-white"></div>
+        </div>
+    </section>
+
+
+    <section id="home"
+        class="relative overflow-hidden bg-gradient-to-r from-gray-100 via-gray-50 to-white block md:hidden sm:block h-[500px] mt-12">
+        <div id="carousel" class="swiper-container relative shadow-2xl lg:shadow-black">
+            <div
+                class="absolute inset-0 flex flex-col items-center justify-center text-center z-20 text-white bg-black bg-opacity-50 wrap">
+                <h2 class="text-5xl font-bold mb-6 transition delay-500">
+                    Vowell
+                </h2>
+                <p class="text-lg mb-6 px-8 flex py-10 text-sm lg:px-24">
+                    Here, we are embracing a transformative era with strategic growth and innovative solutions. Our
+                    commitment to excellence drives us to set industry benchmarks and create a thriving environment for
+                    all our stakeholders.
+                </p>
+            </div>
+            <div class="swiper-wrapper h-full">
+                <div class="swiper-slide">
+                    <img class="w-full h-[500px] object-cover" src="./images/chatbot.jpg" alt="Chatbot Slide">
+                </div>
+                <div class="swiper-slide">
+                    <img class="w-full h-[500px] object-cover" src="./images/microprocessor2.jpeg"
+                        alt="Microprocessor Slide">
+                </div>
+                <div class="swiper-slide">
+                    <img class="w-full h-[500px] bject-cover" src="./images/iot.jpg" alt="IoT Slide">
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="w-full h-[500px] object-cover" src="./images/drone.jpg"
+                        alt="Microprocessor Slide">
+                </div>
+                <div class="swiper-slide">
+                    <img class="w-full h-[500px] object-cover" src="./images/ml.jpg" alt="ML Slide">
+                </div>
+            </div>
+            <div class="swiper-pagination z-50 text-sm text-white"></div>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 container mx-auto text-center">
+            <div
+                class="bg-white p-6 rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                <div class="flex items-center justify-center mb-4">
+                    <i class="fas fa-lightbulb text-4xl text-gray-800"></i>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Innovation</h3>
+                <p class="text-gray-600">Leading the way with innovative solutions that push the boundaries of
+                    technology.</p>
+            </div>
+            <div
+                class="bg-white p-6 rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                <div class="flex items-center justify-center mb-4">
+                    <i class="fas fa-award text-4xl text-gray-800"></i>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Excellence</h3>
+                <p class="text-gray-600">Dedicated to delivering excellence in every aspect of our services and
+                    solutions.</p>
+            </div>
+            <div
+                class="bg-white p-6 rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                <div class="flex items-center justify-center mb-4">
+                    <i class="fas fa-users text-4xl text-gray-800"></i>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Customer Focus</h3>
+                <p class="text-gray-600">Putting our customers first and ensuring their needs and expectations are met.
+                </p>
+            </div>
+        </div>
+
+        <div class="container mx-auto text-center my-12">
+            <a href="#about"
+                class="inline-block px-6 py-3 bg-black text-white font-semibold rounded-lg shadow-lg hover:bg-gray-800 transition duration-300 transform hover:scale-105">
+                Learn More About Us
+            </a>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- CEO Message -->
+    <section id="ceo" class="relative px-10 py-16 bg-gray-200 text-black overflow-hidden">
+        <div class="absolute inset-0 -z-10">
+            <svg class="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H100V100H0V0Z" fill="rgba(255, 255, 255, 0.1)" />
+                <path d="M0 50C30 40 70 80 100 50V100H0V50Z" fill="rgba(255, 255, 255, 0.05)" />
+            </svg>
+        </div>
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-8">
+                <img src="./images/ceo.jpg"
+                    class="rounded-full w-48 h-48 border-4 border-white shadow-lg transform transition-transform hover:scale-105"
+                    loading="lazy" alt="CEO">
+            </div>
+            <div class="text-gray-800 flex-1">
+                <h3 class="text-4xl font-bold mb-4 transition delay-150">
+                    Message from Our CEO
+                </h3>
+                <p class="text-lg mb-4 transition delay-50">
+                    At Vowell, we are driven by a relentless pursuit of innovation and excellence. Our
+                    commitment to delivering cutting-edge technology solutions, combined with our unwavering focus on
+                    customer satisfaction, sets us apart in the industry. Together, we are not just connecting the
+                    globe; we are shaping the future.
+                </p>
+                <footer class="text-right text-sm italic transition delay-50">
+                    Akshay Shukla, <span class="not-italic font-bold">(CEO Vowell)</span>
+                </footer>
+            </div>
+        </div>
+    </section>
+    <!-- AI and ML Section -->
+    <section id="ai-ml" class="relative px-8 py-16 text-white shadow-black overflow-hidden">
+        <div class="absolute inset-0 -z-10">
+            <svg class="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H100V100H0V0Z" fill="rgba(255, 255, 255, 0.05)" />
+                <path d="M0 50C30 40 70 80 100 50V100H0V50Z" fill="rgba(255, 255, 255, 0.02)" />
+            </svg>
+        </div>
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 transition-opacity duration-150 delay-150 opacity-0 animate-opacity">
+                AI and ML Innovations
+            </h2>
+            <p
+                class="text-lg mb-6 px-4 font-bold sm:px-8 lg:px-16 transition-opacity duration-150 opacity-0 animate-opacity">
+                We are at the forefront of AI and ML, developing cutting-edge solutions to transform businesses. Our
+                expertise in chatbot integration, data analysis, and model training allows us to deliver intelligent and
+                efficient services.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div
+                    class="bg-white text-black p-6 rounded-lg shadow-lg transform transition-transform hover:scale-110 transition duration-500 opacity-0 animate-opacity">
+                    <h3 class="text-2xl font-semibold mb-2">Chatbot Integration</h3>
+                    <p class="text-gray-700">Implementing intelligent chatbots to enhance customer interaction and
+                        support.</p>
+                </div>
+                <div
+                    class="bg-white text-black p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 transition duration-300 opacity-0 animate-opacity">
+                    <h3 class="text-2xl font-semibold mb-2">Data Analysis</h3>
+                    <p class="text-gray-700">Leveraging data analysis to derive insights and drive informed decisions.
+                    </p>
+                </div>
+                <div
+                    class="bg-white text-black p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 transition duration-300 opacity-0 animate-opacity">
+                    <h3 class="text-2xl font-semibold mb-2">Model Training</h3>
+                    <p class="text-gray-700">Training robust machine learning models to deliver accurate and reliable
+                        results.</p>
+                </div>
+            </div>
+            <a href="#contact"
+                class="inline-block mt-8 px-6 py-3 bg-black text-white font-semibold rounded-lg shadow-lg hover:bg-gray-800 transition duration-300 transform hover:scale-105">
+                Discover More
+            </a>
+        </div>
+    </section>
+    <!-- Other Services Section -->
+    <section id="services" class="relative hidden lg:block px-4 my-12">
+        <h2 class=" font-bold text-center mb-12 text-4xl font-bold text-black text-center mb-12">Other Services</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 text-white lg:grid-cols-3 gap-6">
+            <div
+                class="bg-gradient-to-r from-gray-800 to-gray-600 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+                <h3 class="text-2xl font-semibold mb-2">Telecommunications</h3>
+                <p class="text-lg">Providing cutting-edge telecommunication solutions to connect the globe.</p>
+            </div>
+            <div
+                class="bg-gradient-to-r from-gray-800 to-gray-600 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+                <h3 class="text-2xl font-semibold mb-2">CyberSecurity</h3>
+                <p class="text-lg">Ensuring your data and networks are secure with our advanced cybersecurity services.
+                </p>
+            </div>
+            <div
+                class="bg-gradient-to-r from-gray-800 to-gray-600 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+                <h3 class="text-2xl font-semibold mb-2">Semiconductor Chip Design</h3>
+                <p class="text-lg">Leading in innovative semiconductor chip design and development.</p>
+            </div>
+            <div
+                class="bg-gradient-to-r from-gray-800 to-gray-600 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+                <h3 class="text-2xl font-semibold mb-2">Custom Software Development</h3>
+                <p class="text-lg">Bespoke software solutions tailored to your business needs.</p>
+            </div>
+            <div
+                class="bg-gradient-to-r from-gray-800 to-gray-600 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+                <h3 class="text-2xl font-semibold mb-2">SaaS</h3>
+                <p class="text-lg">Delivering scalable and efficient software as a service (SaaS) solutions.</p>
+            </div>
+            <div
+                class="bg-gradient-to-r from-gray-800 to-gray-600 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+                <h3 class="text-2xl font-semibold mb-2">Web Development</h3>
+                <p class="text-lg">Creating responsive and engaging websites to enhance your online presence.</p>
+            </div>
+        </div>
+    </section>
+    <section id="services-mobile" class="relative block md:hidden text-white px-4 my-8">
+        <h2 class="text-4xl font-bold text-black text-center mb-12">Other Services</h2>
+        <div class="swiper-container carousel-2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div
+                        class="bg-gradient-to-r from-gray-800 to-gray-600 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold text-center mb-2">Telecommunications</h3>
+                        <p class="text-lg hidden md:hidden">Providing cutting-edge telecommunication solutions to
+                            connect the globe.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div
+                        class="bg-gradient-to-r from-gray-800 to-gray-600 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold text-center mb-2">CyberSecurity</h3>
+                        <p class="text-lg hidden md:hidden">Ensuring your data and networks are secure with our advanced
+                            cybersecurity services.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div
+                        class="bg-gradient-to-r from-gray-800 to-gray-600 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold text-center mb-2">Semiconductor Chip Design</h3>
+                        <p class="text-lg hidden md:hidden">Leading in innovative semiconductor chip design and
+                            development.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div
+                        class="bg-gradient-to-r from-gray-800 to-gray-600 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold text-center mb-2">Custom Software Development</h3>
+                        <p class="text-lg hidden md:hidden">Bespoke software solutions tailored to your business needs.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div
+                        class="bg-gradient-to-r from-gray-800 to-gray-600 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold text-center mb-2">SaaS</h3>
+                        <p class="text-lg hidden md:hidden">Delivering scalable and efficient software as a service
+                            (SaaS) solutions.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div
+                        class="bg-gradient-to-r from-gray-800 to-gray-600 p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+                        <h3 class="text-2xl font-semibold mb-2">Web Development</h3>
+                        <p class="text-lg hidden md:hidden">Creating responsive and engaging websites to enhance your
+                            online presence.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <section id="web-development" class="relative py-16 px-8 text-black bg-cover bg-center">
+        <div class="container mx-auto my-auto p-8 text-center hidden md:block">
+            <h2 class="text-4xl font-bold text-white mb-6 shadow-lg">Web Development Services</h2>
+            <p class="text-lg mb-8 font-semibold text-white">
+                We offer a wide range of web development services tailored to meet your business needs. Our solutions
+                are designed to provide an engaging user experience, drive conversions, and enhance your online
+                presence.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div
+                    class="bg-white text-black p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-4">Custom Website Development</h3>
+                    <p class="mb-4">We build custom websites that are tailored to your specific business needs. Our team
+                        ensures your site is visually appealing, functional, and optimized for performance.</p>
+                    <a href="#contact" class="text-black font-semibold hover:underline">Get Started</a>
+                </div>
+                <div
+                    class="bg-white text-black p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-4">E-commerce Solutions</h3>
+                    <p class="mb-4">Our e-commerce solutions help you sell products online with ease. We provide robust
+                        and scalable platforms that offer a seamless shopping experience for your customers.</p>
+                    <a href="#contact" class="text-black font-semibold hover:underline">Learn More</a>
+                </div>
+                <div
+                    class="bg-white text-black p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-4">Responsive Design</h3>
+                    <p class="mb-4">We create websites that look and perform beautifully on all devices. Our responsive
+                        designs ensure your site provides a great user experience on desktops, tablets, and mobile
+                        phones.</p>
+                    <a href="#contact" class="text-black font-semibold hover:underline">Find Out More</a>
+                </div>
+
+                <div
+                    class="bg-white text-black p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-4">SEO Optimization</h3>
+                    <p class="mb-4">Our SEO services help improve your site's visibility on search engines. We use
+                        proven techniques to drive organic traffic and boost your online presence.</p>
+                    <a href="#contact" class="text-black font-semibold hover:underline">Optimize Now</a>
+                </div>
+                <div
+                    class="bg-white text-black p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-4">CMS Integration</h3>
+                    <p class="mb-4">We integrate powerful content management systems (CMS) like WordPress to make it
+                        easy for you to manage your website content.</p>
+                    <a href="#contact" class="text-black font-semibold hover:underline">Get Integrated</a>
+                </div>
+                <div
+                    class="bg-white text-black p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-4">Web Application Development</h3>
+                    <p class="mb-4">We develop custom web applications that cater to your unique business requirements.
+                        Our applications are scalable, secure, and user-friendly.</p>
+                    <a href="#contact" class="text-black font-semibold hover:underline">Develop Now</a>
+                </div>
+            </div>
+            <div class="mt-8">
+                <a href="#contact"
+                    class="inline-block bg-black text-white px-8 py-3 rounded-lg shadow-lg hover:bg-gray-800 transition duration-300">Contact
+                    Us for a Free Consultation</a>
+            </div>
+        </div>
+        <!-- Mobile View -->
+        <div class="container
+         mx-auto my-auto p-8 text-center md:hidden">
+            <h2 class="text-4xl font-bold text-white mb-6 shadow-lg">Web Development Services</h2>
+            <p class="text-lg mb-8 font-semibold text-white">
+                We offer a wide range of web development services tailored to meet your business needs. Our solutions
+                are designed to provide an engaging user experience, drive conversions, and enhance your online
+                presence.
+            </p>
+        </div>
+        <div class="swiper-container carousel-3 md:hidden">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="bg-white text-black p-6 rounded-lg shadow-lg mx-2">
+                        <h3 class="text-2xl font-semibold mb-4">Custom Website Development</h3>
+                        <p class="mb-4">We build custom websites that are tailored to your specific business needs. Our
+                            team ensures your site is visually appealing, functional, and optimized for performance.</p>
+                        <a href="#contact" class="text-black font-semibold hover:underline">Get Started</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-white text-black p-6 rounded-lg shadow-lg mx-2">
+                        <h3 class="text-2xl font-semibold mb-4">E-commerce Solutions</h3>
+                        <p class="mb-4">Our e-commerce solutions help you sell products online with ease. We provide
+                            robust and scalable platforms that offer a seamless shopping experience for your customers.
+                        </p>
+                        <a href="#contact" class="text-black font-semibold hover:underline">Learn More</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-white text-black p-6 rounded-lg shadow-lg mx-2">
+                        <h3 class="text-2xl font-semibold mb-4">Responsive Design</h3>
+                        <p class="mb-4">We create websites that look and perform beautifully on all devices. Our
+                            responsive designs ensure your site provides a great user experience on desktops, tablets,
+                            and mobile phones.</p>
+                        <a href="#contact" class="text-black font-semibold hover:underline">Find Out More</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-white text-black p-6 rounded-lg shadow-lg mx-2">
+                        <h3 class="text-2xl font-semibold mb-4">SEO Optimization</h3>
+                        <p class="mb-4">Our SEO services help improve your site's visibility on search engines. We use
+                            proven techniques to drive organic traffic and boost your online presence.</p>
+                        <a href="#contact" class="text-black font-semibold hover:underline">Optimize Now</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-white text-black p-6 rounded-lg shadow-lg mx-2">
+                        <h3 class="text-2xl font-semibold mb-4">CMS Integration</h3>
+                        <p class="mb-4">We integrate powerful content management systems (CMS) like WordPress to make it
+                            easy for you to manage your website content.</p>
+                        <a href="#contact" class="text-black font-semibold hover:underline">Get Integrated</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-white text-black p-6 rounded-lg shadow-lg mx-2">
+                        <h3 class="text-2xl font-semibold mb-4">Web Application Development</h3>
+                        <p class="mb-4">We develop custom web applications that cater to your unique business
+                            requirements. Our applications are scalable, secure, and user-friendly.</p>
+                        <a href="#contact" class="text-black font-semibold hover:underline">Develop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <section id="about" class="relative flex flex-col lg:flex-row p-4 py-16 space-y-8 lg:space-y-0">
+        <div class="lg:w-1/2 flex justify-center  items-center">
+            <img src="./images/about.jpg" alt="Company Image"
+                class="w-full lg:w-3/4 h-auto shadow-black shadow-2xl transition-opacity delay-300 object-cover rounded-lg shadow-lg">
+        </div>
+        <div class="lg:w-1/2 flex flex-col justify-center text-center lg:text-left">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8">About Us</h2>
+            <p class="text-lg mb-6 px-4 sm:px-8 lg:px-0">
+                Vowell is a Technology company dealing in Software, Telecommunications & Semiconductor Design. We are
+                known for our Software Development, Web solutions, Semiconductor Designs, and Clients
+                Deliverables.
+            </p>
+            <p class="text-lg mb-6 px-4 sm:px-8 lg:px-0 lg:block hidden">
+                Vowell as a SaaS aims to provide businesses with turn-key computing solutions based on the latest
+                technology
+                and providing superior customer support and training to take a company infrastructure into the future
+                and beyond. Our first product is expected to be released in October 2024.
+            </p>
+            <p class="text-lg mb-6 px-4 sm:px-8 lg:px-0 lg:block hidden">
+                Vowell Semiconductor focuses on designing & developing digital chips including
+                latest technology products like Drone/UAVs chips.
+            </p>
+        </div>
+    </section>
+
+
+
+
+    <section id="contact" class="bg-black p-8 border-b border-gray-700 rounded-lg shadow-lg">
+        <div class="container text-md flex flex-col lg:flex-row justify-between items-start lg:items-center">
+            <form name="submit-to-google-sheet"
+                class="flex flex-col bg-gray-800 p-6 rounded-lg shadow-lg max-w-lg mx-auto lg:w-1/2">
+                <h2 class="text-4xl font-bold text-white mb-8 text-center">Contact Us</h2>
+                <input
+                    class="mb-4 p-3 rounded bg-gray-900 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-700 mx-2"
+                    type="text" name="Name" placeholder="Your Name" required>
+
+                <input
+                    class="mb-4 p-3 rounded bg-gray-900 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-700 mx-2 sm:mx-0 sm:w-full"
+                    type="email" name="Email" placeholder="Your Email" required>
+                <input
+                    class="mb-4 p-3 rounded bg-gray-900 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-700 mx-2 sm:mx-0 sm:w-full"
+                    type="text" name="Mobile" placeholder="Mobile Number" required>
+                <textarea name="Message"
+                    class="mb-4 p-3 rounded bg-gray-900 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-700"
+                    rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit"
+                    class="bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-600 transition duration-100 ease-in-out">
+                    Submit
+                </button>
+                <span id="msg" class="text-gray-200 mt-4 block text-center"></span>
+            </form>
+         <div class="mx-auto lg:w-1/2 lg:pr-8 mb-8 lg:mb-0 mx-auto md:block hidden" id="contactme">
+                <div id="stpi_img" class="container p-4 rounded-lg"><img src="./images/stpi.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-black text-white p-8">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-start">
+            <div class="lg:w-1/2 mb-6 md:mb-0">
+                <h4 class="text-xl font-bold mb-4">About Vowel</h4>
+                <p class="mb-2"><i class="fas fa-building mr-2"></i>Headquarters: STPI Prayagraj MNNIT Allahabad Campus,
+                    Teliarganj, Prayagraj, <br> Uttar Pradesh 211001, IN
+                </p>
+                <p class="mb-2"><i class="fas fa-phone mr-2"></i>Phone: +91 6387330590</p>
+                <p>Website: <a href="https://www.vowell.com"
+                        class="text-gray-300 hover:underline hover:text-gray-400">www.vowell.com</a></p>
+            </div>
+            <div class="mb-6 md:mb-0 text-white">
+                <h4 class="text-xl font-bold  mb-4">Quic k Links</h4>
+                <ul>
+                    <li><a href="#home" class="hover:text-gray-400"><i class="fas fa-home mr-2"></i>Home</a></li>
+                    <li><a href="#services" class="hover:text-gray-400"><i class="fas fa-cogs mr-2"></i>Services</a>
+                    </li>
+                    <li><a href="#about" class="hover:text-gray-400"><i class="fas fa-info-circle mr-2"></i>About Us</a>
+                    </li>
+                    <li><a href="#contact" class="hover:text-gray-400"><i class="fas fa-envelope mr-2"></i>Contact
+                            Us</a></li>
+                </ul>
+            </div>
+            <div class="mb-6 md:mb-0">
+                <h4 class="text-xl font-bold mb-2">Subscribe to Our Newsletter</h4>
+                <p class="mb-2">Stay updated with the latest news and offers from Vowel.</p>
+                <form action="#" method="POST" class="flex flex-col sm:flex-row">
+                    <input type="email" disabled placeholder="Comming Soon....."
+                        class="bg-gray-800 text-white p-2 rounded-lg mb-2 sm:mb-0 sm:mr-2 w-full sm:w-64" required>
+                    <button type="submit" disabled
+                        class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-1 rounded-lg w-full sm:w-auto">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="text-center mt-6 border-t border-gray-700 pt-4">
+            <p>&copy; 2024 Vowel Pvt. Ltd. All rights reserved. Designed with <span class="text-red-500">&hearts;</span>
+                by <a href="https://ashutoshtiwari.netlify.app/"
+                    class="text-gray-300 hover:text-gray-400"><u>Ashutosh</u></a>.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Other dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- chatbots integration -->
+    <script async data-id="9523142154" id="chatling-embed-script" type="text/javascript"
+        src="https://chatling.ai/js/embed.js"></script>
+    <!-- Include Swiper's JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
